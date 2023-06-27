@@ -1,0 +1,79 @@
+/* Course Title Styles */
+
+.course-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Blockquote Styles */
+
+.blockquote {
+    font-size: 15px;
+}
+
+/* Figure Styles */
+
+figure {
+    text-align: center;
+}
+
+/* List Styles */
+
+.course-info-list, .cca-list {
+    list-style-type: disc;
+}
+
+/* Course Typography */
+
+.course-info p {
+    text-align: justify;
+}
+
+.course-title a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Course Div Styles */
+
+div.course-choice{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 300px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+div.course-choice-list{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Images */
+
+.course-img{
+    width: 100%;
+}
+
+.sp-exp-img{
+    padding: 0;
+}
+
+/* Image Map */
+#img_map{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* First Impression */
+.firstImpression{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#firstimplink{
+    text-decoration: none;
+}

@@ -1,0 +1,13 @@
+/* List Styles */
+
+.career-list{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+}
+
+/* Images */
+
+.career-img{
+    width: 100%;
+}

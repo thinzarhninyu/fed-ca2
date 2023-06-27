@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;500;600;700&family=Fira+Sans:wght@300&family=Limelight&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a> -->
+    <link rel="icon" type="image/png" href="/img/person.png" />
+
+    <!-- Link to javascript -->
+    <script src="js/blackjack.js" defer></script>
+    <script src="js/flipthecard.js" defer></script>
+
+    <!-- Images are taken from: https://www.pexels.com/ and icons are taken from https://icons.getbootstrap.com/ or https://www.flaticon.com/icons -->
+</head>
+
+<body class="bg">
+
+
+    <header class="container  position-sticky top-0" id="navigation">
+        <nav class="navbar navbar-expand-sm  h-25 header-nav">
+            <div class="container">
+                <a href="index.html" class="navbar-brand h5">Thinzar's Portfolio</a>
+
+                <!-- How the header navbar will look like on screen sizes more than 767px -->
+                <nav class="navbar-nav navigation-bar">
+                    <a href="index.html" class="nav-item nav-link header-nav-box" aria-current="page">Home</a>
+                    <a href="aboutme.html" class="nav-item nav-link header-nav-box">About Me</a>
+                    <a href="lifeatsp.html" class="nav-item nav-link header-nav-box">Life at SP</a>
+                    <a href="careeroptions.html" class="nav-item nav-link header-nav-box">Career Options</a>
+                    <a href="feedback.html" class="nav-item nav-link header-nav-box">Feedback</a>
+                </nav>
+
+                <!-- How the header navbar will look like on screen sizes less than 767px -->
+                <nav class="inline-block icon-navbar">
+                    <a href="index.html" class="nav-item nav-link d-inline-block pe-1" aria-current="page"><img
+                            src="images/house.svg" alt=""></a>
+                    <a href="aboutme.html" class="nav-item nav-link  d-inline-block pe-1"><img src="images/person.svg"
+                            alt=""></a>
+                    <a href="lifeatsp.html" class="nav-item nav-link d-inline-block pe-1"><img src="images/book.svg"
+                            alt=""></a>
+                    <a href="careeroptions.html" class="nav-item nav-link  d-inline-block pe-1"><img
+                            src="images/briefcase.svg" alt=""></a>
+                    <a href="feedback.html" class="nav-item nav-link  d-inline-block pe-1"><img src="images/ui-checks.svg"
+                            alt=""></a>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <!-- The main body of the page -->
+    <div class="container mb-0 my-4" id="body">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm  h-25">
+                <div class="container">
+                    <a href="aboutme.html" class="navbar-brand h4 text-decoration-none">About Me</a>
+
+                    <!-- A sub nav-bar with links to specific parts of the page -->
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link page-nav" href="#education">Education</a>
+                        <a class="nav-item nav-link page-nav " href="#skills">Skills</a>
+                        <a class="nav-item nav-link page-nav " href="#hobbies">Hobbies</a>
+                        <a class="nav-item nav-link page-nav " href="#interests">Interests</a>
+                        <a class="nav-item nav-link page-nav" href="#values">Values</a>
+                        <a class="nav-item nav-link page-nav" href="#personality">Personality</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row my-5">
+            <!-- A div that will stay as one-column despite changes in screen-size -->
+            <div class="col-12  col-sm-12">
+                <!-- A card for the school I attended/am attending + my academic achievements + my leadership experiences -->
+                <div class="card text-center">
+                    <h5 class="card-header heading h5" id="education">
+                        Education
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text w-100">
+                            <!-- A list for the schools I attended/am attending -->
+                            <ul class="education-list">
+                                <li>
+                                    <h6>Basic Education High School, No.(2), Sanchaung, Yangon, Myanmar</h6>
+                                    <p>2010 - 2019 (Secondary Education)</p>
+                                </li>
+
+                                <li>
+                                    <h6>Institute of International Professionalism</h6>
+                                    <p>2019 - 2022 (IGCSE)</p>
+                                </li>
+
+                                <li>
+                                    <h6>Singapore Polytechnic</h6>
+                                    <p>2022 - Present (Diploma in Information Technology)</p>
+                                </li>
+                            </ul>
+
+                            <div class="row">
+                                <div class="col col-lg-6 col-md-12">
+                                    <!-- A table about my academic achievements -->
+                                    <table class="table">
+                                        <caption>My Academic Achievements are as follow:</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Achievement</th>
+                                                <th>Year Achieved</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Math Competition (School Level)</td>
+                                                <td rowspan="2" class="align-middle">2016-2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td>English Impromptu Competition (School Level)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>English Impromptu Competition (Nation Level)</td>
+                                                <td>2017</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cambridge Preliminary English Test (PET)</td>
+                                                <td>2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Outstanding Student for 8 Years</td>
+                                                <td>2019</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pearson Student Excellence Award</td>
+                                                <td>2022</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2">And more...</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="col col-lg-6 col-md-12">
+                                    <!-- A table about my leadership experiences -->
+                                    <table class="table small-table mb-0 text-center ">
+                                        <caption>My Leadership Experiences are as follow:</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Year</th>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="3" class="align-middle">Position</th>
+                                                <td colspan="3" class="cell-bg" style="background-color: #cdddf7;">Class
+                                                    President</td>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                                <td colspan="3" class="cell-bg" style="background-color: #cdddf7;">
+                                                    Student Council Representative</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"></td>
+                                                <td colspan="2" class="cell-bg" style="background-color: #cdddf7;">
+                                                    School Play Leader</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table small-table text-center">
+                                        <caption>My CCA Experiences are as follow:</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Year</th>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="2" class="align-middle">Position</th>
+                                                <td colspan="3"></td>
+                                                <td colspan="3" class="cell-bg" style="background-color: #cdddf7;">
+                                                    School Band (Drums)
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"></td>
+
+                                                <td colspan="2" class="cell-bg" style="background-color: #cdddf7;">Play
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" style="height: max-content;">
+            <!-- Blackjack game -->
+            <div class="container col-12 blackjack pt-4 pb-2 col-lg-6 col-md-12 col-sm-12 align-middle">
+                <h5 class="h5 blackjack-intro">Do have a little break with my Blackjack Game!</h5>
+                <div class="hide-game-over">
+                    <h6 class="h6">A: 1; J,Q,K: 10</h6>
+                    <p id="message-el">Would you like to play a round?</p>
+                    <p id="cards-el">Cards:</p>
+                    <p id="sum-el">Sum:</p>
+                    <button class="btn btn-primary mb-2 d-block blackjack-btn startBtn" onclick="startGame()">START
+                        GAME</button>
+                    <button class="btn btn-warning mb-2 d-block blackjack-btn newcard-btn newBtn"
+                        onclick="newCard()">NEW
+                        CARD</button>
+                </div>
+                <button class="btn btn-light d-block blackjack-btn mb-2" onclick="restartGame()">RESTART
+                    GAME</button>
+            </div>
+        </div>
+
+        <div class="row mb-5" style="height: max-content;">
+            <!-- Flip the card game -->
+            <div class=" container col-12 pt-4 pb-4 col-lg-6 col-md-12 align-middle flipcardgame ps-2 pe-2"
+                style="height: max-content;">
+                <h5 class="h5 text-center">Have some fun with my Flip The Card Game!</h5>
+                <h6 class="h6 text-center">Click on any card to begin!</h6>
+                <div class="memory-game">
+                    <div class="memory-card" data-framework="wonu1">
+                        <img class="front-face" src="img/flipthecard/wonu.jpg" alt="wonu" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="wonu" />
+                    </div>
+                    <div class="memory-card" data-framework="wonu1">
+                        <img class="front-face" src="img/flipthecard/wonu.jpg" alt="wonu" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="wonu" />
+                    </div>
+
+                    <div class="memory-card" data-framework="hoshi">
+                        <img class="front-face" src="img/flipthecard/hoshi.jpg" alt="hoshi" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+                    <div class="memory-card" data-framework="hoshi">
+                        <img class="front-face" src="img/flipthecard/hoshi.jpg" alt="hoshi" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+
+                    <div class="memory-card" data-framework="dino">
+                        <img class="front-face" src="img/flipthecard/dino.jpg" alt="dino" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+                    <div class="memory-card" data-framework="dino">
+                        <img class="front-face" src="img/flipthecard/dino.jpg" alt="dino" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+
+                    <div class="memory-card" data-framework="kwan">
+                        <img class="front-face" src="img/flipthecard/kwan.jpg" alt="kwan" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+                    <div class="memory-card" data-framework="kwan">
+                        <img class="front-face" src="img/flipthecard/kwan.jpg" alt="kwan" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+
+                    <div class="memory-card" data-framework="wonu2">
+                        <img class="front-face" src="img/flipthecard/wonu2.jpg" alt="wonu2" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+                    <div class="memory-card" data-framework="wonu2">
+                        <img class="front-face" src="img/flipthecard/wonu2.jpg" alt="wonu2" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+
+                    <div class="memory-card" data-framework="wonu3">
+                        <img class="front-face" src="img/flipthecard/wonu3.jpg" alt="wonu3" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+                    <div class="memory-card" data-framework="wonu3">
+                        <img class="front-face" src="img/flipthecard/wonu3.jpg" alt="wonu3" />
+                        <img class="back-face" src="img/flipthecard/svt.jpg" alt="svt" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div for image cards that will show in 4 columns in laptops, 2 columns in tablets and 1 column in small devices -->
+        <div class="row mb-5" style="height: max-content;">
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-md-3 mb-sm-3 xs-margin-fix">
+                <div class="card d-inline-block w-100 ">
+                    <img src="img/my-graduation.jpg" class="card-img-top" alt="My Graudation Photo">
+                    <div class="card-body">
+                        <h5 class="card-title h5">My Graduation Photo</h5>
+                        <p class="card-text">
+                            I graduated at the top of my class, achieving A+ in 9 subjects,
+                            which are Biology, Business, Chemistry, Computer Science, English Language A,
+                            Information
+                            and
+                            Communication Technology, Mathematics B, Physics, and Further Pure Mathematics.
+                        </p>
+                        <a href="certificates/IGCSE.pdf" target="_blank"
+                            class="btn link-to d-flex justify-content-center">Click here for
+                            my
+                            IGCSE certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-3 col-md-6 col-sm-12 mb-md-3 mb-sm-3 xs-margin-fix">
+                <div class="card d-inline-block w-100 ">
+                    <img src="img/graduation-group-photo.JPG" class="card-img-top"
+                        alt="Our Batch Graduation Group Photo">
+                    <div class="card-body">
+                        <h5 class="card-title h5">Our Batch's Graduation</h5>
+                        <p class="card-text">
+                            Our 2019-2021 two-years-journey was filled with joy, small arguments,
+                            inside-jokes that
+                            nobody but only the 16 people in our class understood, and fun hangouts. Even after
+                            the
+                            graduation,
+                            this precious and valuable friendship is maintained.
+                        </p>
+                        <a href="img/graduation-hat.JPG" target="_self"
+                            class="btn link-to d-flex justify-content-center">Click here for us throwing our hats!</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-md-3 mb-sm-3 xs-margin-fix">
+                <div class="card d-inline-block w-100 ">
+                    <img src="img/fieldtrip.jpeg" class="card-img-top" alt="Our Class on Field Trip">
+                    <div class="card-body">
+                        <h5 class="card-title h5">Our Class on Field Trip</h5>
+                        <p class="card-text">
+                            This was the first school-organised trip that our class went together,
+                            It was a
+                            three-days two-nights short trip, but it was filled with joy and happiness. We
+                            made
+                            lots
+                            of fun
+                            memories together, and it strengthened our friendship and the bond between us.
+                        </p>
+                        <a href="https://fb.watch/e8KZjFchnG/" rel=”noreferrer”
+                            class="btn link-to d-flex justify-content-center">Click here for a
+                            short video of our trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-3 col-md-6 col-sm-12 mb-md-3 mb-sm-3 ">
+                <div class="card d-inline-block w-100">
+                    <img src="img/sports-day.jpeg" class="card-img-top" alt="Our Class on Sports Day">
+                    <div class="card-body">
+                        <h5 class="card-title h5">Our Class on Sports Day</h5>
+                        <p class="card-text">
+                            Our school organised a fun Sports Day event, on our second day of the field trip. We
+                            played
+
+                            fun sports and enjoyed ourselves, without worrying much about winning. And guess
+                            what?
+                            We
+                            didn't win
+                            the prizes, but we won all the fun memories! And fun bloopers...
+                        </p>
+                        <a href="https://fb.watch/e9_de83bth/" rel=”noreferrer”
+                            class="btn link-to d-flex justify-content-center">Click here for a
+                            short video of our activity</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Div for skills with progress bars that will show in 4 columns in laptops, 2 columns in tablets and 1 column in small devices -->
+        <div class="row mb-5" style="height: max-content;">
+            <div class="col-12  col-sm-12">
+                <div class="card text-center">
+                    <h5 class="card-header heading h5" id="skills">
+                        Skills
+                    </h5>
+                    <div class="card-body">
+                        <div class="row" style="height: max-content;">
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-12  mb-md-3 mb-sm-3 xs-margin-fix">
+                                <div class="card d-inline-block w-100 border-1">
+                                    <div class="card-header heading2" id="tech-skills">
+                                        Technical Skills
+                                    </div>
+
+                                    <div class="card-body progress-body">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Microsoft
+                                                Office</div>
+                                        </div>
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                HTML/CSS/Bootstrap</div>
+                                        </div>
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python
+                                            </div>
+                                        </div>
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">C++</div>
+                                        </div>
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Videography
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Photography
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-md-3 mb-sm-3 xs-margin-fix">
+                                <div class="card d-inline-block w-100 border-1">
+                                    <div class="card-header heading2" id="soft-skills">
+                                        Soft Skills
+                                    </div>
+
+                                    <div class="card-body progress-body">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Time
+                                                Management</div>
+                                        </div>
+                                        <div class="progress  mb-2">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Written Communication</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Leadership
+                                            </div>
+                                        </div>
+                                        <div class="progress  ">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Teamwork
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                Communication</div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Problem
+                                                Solving</div>
+                                        </div>
+                                        <div class="progress  mb-2">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Critical
+                                                Thinking</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-12  mb-md-3 mb-sm-3 xs-margin-fix">
+                                <div class="card d-inline-block w-100 border-1">
+                                    <div class="card-header heading2" id="lang-skills">
+                                        Language Skills
+                                    </div>
+
+                                    <div class="card-body progress-body">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Myanmar
+                                            </div>
+                                        </div>
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">English
+                                            </div>
+                                        </div>
+                                        <div class="progress  ">
+                                            <div class="progress-bar" role="progressbar" style="width: 20%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Korean
+                                            </div>
+                                        </div>
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" style="width: 20%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Japanese
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
+                                <div class="card d-inline-block w-100 border-1">
+                                    <div class="card-header heading2" id="other-skills">
+                                        Other Skills and Qualifications
+                                    </div>
+
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            If you are interested in my other skills or qualifications, do click on
+                                            the link below.
+
+
+                                        </p>
+                                        <a href="careeroptions.html#skillset" rel=”noreferrer”
+                                            class="btn link-to mt-2 mb-1">Skills and Qualifications</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Div for hobbies and interests that will show in 2 columns in laptops, 1 columns in tablets and small devices -->
+        <div class="row" style="height: max-content;">
+            <div class="col col-lg-6 col-md-12 mb-md-3 mb-sm-3 xs-margin-fix">
+                <div class="card">
+                    <div class="card-header border-bottom-2 heading text-center" id="hobbies">
+                        <h5 class="h5">Hobbies</h5>
+                    </div>
+
+                    <div class="card-body  ">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Coding</div>
+                                    <p class="mb-0">The languages I speak include: HTML, CSS, Bootstrap, Javascript,
+                                        Python, C++ and
+                                        PHP.</p>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Music</div>
+                                    <p class="card-text">Music is an essential part of my life. Feel free to
+                                        check out my
+                                        comfort songs.</p>
+                                    <iframe style="border-radius:12px" class="p-0"
+                                        src="https://open.spotify.com/embed/playlist/2a75fudD9j2eAHM6Lbbk2g?utm_source=generator"
+                                        height="80" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Movies</div>
+                                    <p class="card-text">What's better than just chilling at home and
+                                        watching your favourite
+                                        series? </p>
+                                </div>
+
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-6 col-md-12  mb-md-3 mb-sm-3 xs-margin-fix">
+                <div class="card">
+                    <div class="card-header border-bottom-2 heading text-center" id="interests">
+                        <h5 class="h5">Interests</h5>
+                    </div>
+
+                    <div class="card-body  ">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Coding</div>
+                                    <p class="mb-0">Coding is one of my biggest interests, which
+                                        started 3 years ago, when I took Computer Science for my IGCSE.</p>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Music</div>
+                                    <p class="card-text">Music lights up my mood and boosts my energy
+                                        when I'm feeling down or stressed,
+                                        especially this song.</p>
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/44ymejne8Roi7uT4lhiwCR?utm_source=generator"
+                                        height="80" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Videography</div>
+                                    <p class="card-text">Seeing directors and cameramen using their
+                                        film cameras to shoot dramas or shows, sparked my interests in
+                                        videography. </p>
+                                </div>
+
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Div for values and personality that will show in 2 columns in laptops, 1 columns in tablets and small devices -->
+        <div class="row mb-5" style="height: max-content;">
+            <div class="col col-lg-6 col-md-12  mb-md-3 mb-sm-3 xs-margin-fix">
+                <div class="card">
+                    <div class="card-header border-bottom-2 heading text-center" id="values">
+                        <h5 class="h5">Values</h5>
+                    </div>
+
+                    <div class="card-body ">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Health</div>
+                                    <p class=" mb-0">Without health, the most precious blessing, we would not be able to
+                                        enjoy the things that we
+                                        love, nor achieve our dreams.</p>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Family</div>
+                                    <p class="card-text">Family is also very important for me, I would
+                                        not where I am right now if it were not for their everlasting
+                                        love and support.</p>
+
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Integrity</div>
+                                    <p class="card-text">Integrity is a very important quality, as if one does not have
+                                        strong moral principles, they might not be considered reliable.</p>
+
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Passion</div>
+                                    <p class="card-text">Passion, together with hard work, determines whether one will
+                                        be able
+                                        to achieve their dreams. </p>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Trustworthiness</div>
+                                    <p class="card-text">This quality is very similar to Integrity, as without
+                                        integrity, a person will not be trustworthy. </p>
+                                </div>
+
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-6 col-md-12  mb-md-3 mb-sm-3">
+                <div class="card">
+                    <div class="card-header border-bottom-2 heading text-center" id="personality">
+                        <h5 class="h5">Personality</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">My Personality Type</div>
+                                    <p class="mb-0">My MBTI is: <a
+                                            href="https://www.16personalities.com/isfj-personality">ISFJ</a>,
+                                        The Defender. (Introverted, Sensing, Feeling, Judging). ISFJs
+                                        are hardworking and devoted, with a deep sense of responsibility.
+                                        They have excellent analytical abilities and an eye for
+                                        detail. Even though they may seem reserved, they tend to have
+                                        well-developed people skills and social relationships.</p>
+                                </div>
+
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">My Strengths</div>
+                                    <ul class="card-text">
+                                        <li>Time Management</li>
+                                        <li>Team Working</li>
+                                        <li>Responsibility</li>
+                                        <li>Leadership</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">My Weaknesses</div>
+                                    <ul class="card-text">
+                                        <li>Introvertedness</li>
+                                        <li>Zoophobia</li>
+                                        <li>Social Anxiety</li>
+                                        <li>Over-commitment</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-example-divider mt-4"></div>
+
+    <footer class="container  mt-4">
+        <nav class="navbar navbar-expand-sm footer-nav">
+            <div class="container  xs-center-fix">
+
+                <a href="#" class="navbar-brand h6  xs-center-fix xs-align-fix">&copy; 2022 Thinzar Hnin Yu</a>
+
+                <!-- How the footer navbar will look like on screen sizes more than 767px -->
+                <div class="navbar-nav navigation-bar">
+                    <a href="mailto:thinzarhninyu.17@gmail.com" class="nav-item nav-link footer-nav-box">
+                        <img src="img/envelope.svg" class="footer-logo" alt="Email">
+                    </a>
+                    <a href="http://www.instagram.com/micxehye" class="nav-item nav-link footer-nav-box">
+                        <img src="img/instagram.svg" class="footer-logo" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/thinzar.michelle.7" class="nav-item nav-link footer-nav-box">
+                        <img src="img/facebook.svg" class="footer-logo" alt="Facebook">
+                    </a>
+                    <a href="https://wa.me/+6594572945" class="nav-item nav-link footer-nav-box">
+                        <img src="img/whatsapp.svg" class="footer-logo" alt="Whatsapp">
+                    </a>
+                    <a href="https://www.twitter.com/micxehye" class="nav-item nav-link footer-nav-box">
+                        <img src="img/twitter.svg" class="footer-logo" alt="Twitter">
+                    </a>
+                    <a href="https://line.me/R/ti/p/micxehye" class="nav-item nav-link footer-nav-box">
+                        <img src="img/line.svg" class="footer-logo" alt="Line">
+                    </a>
+                </div>
+
+                <!-- How the footer navbar will look like on screen sizes more than 767px -->
+                <div class="navbar-nav  xs-center-fix icon-navbar">
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Click here to view my contact details!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">My Contact Details</h5>
+                                    <button class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="mailto:thinzarhninyu.17@gmail.com">
+                                        <img src="img/envelope.svg" class="footer-logo" alt="Email">
+                                    </a>
+                                    <a href="http://www.instagram.com/micxehye">
+                                        <img src="img/instagram.svg" class="footer-logo" alt="Instagram">
+                                    </a>
+                                    <a href="https://www.facebook.com/thinzar.michelle.7">
+                                        <img src="img/facebook.svg" class="footer-logo" alt="Facebook">
+                                    </a>
+                                    <a href="https://wa.me/+6594572945">
+                                        <img src="img/whatsapp.svg" class="footer-logo" alt="Whatsapp">
+                                    </a>
+                                    <a href="https://www.twitter.com/micxehye">
+                                        <img src="img/twitter.svg" class="footer-logo" alt="Twitter">
+                                    </a>
+                                    <a href="https://line.me/R/ti/p/micxehye">
+                                        <img src="img/line.svg" class="footer-logo" alt="Line">
+                                    </a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary close" data-dismiss="modal" aria-label="Close">Got
+                                        it!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;500;600;700&family=Fira+Sans:wght@300&family=Limelight&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="css/lifatsp.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/feedback.css">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/form" title="form icons">Form icons created by Freepik - Flaticon</a> -->
+    <link rel="icon" type="image/png" href="/img/form.png" />
+    
+    <!-- Link to javascript -->
+    <script src="js/feedback.js" defer></script>
+    <script src="js/clock.js" defer></script>
+
+    <!-- Images are taken from: https://www.pexels.com/ and icons are taken from https://icons.getbootstrap.com/ or https://www.flaticon.com/icons -->
+
+</head>
+
+<body class="bg">
+    <header class="container  position-sticky top-0" id="navigation">
+        <nav class="navbar navbar-expand-sm  h-25 header-nav">
+            <div class="container">
+                <a href="index.html" class="navbar-brand h5">Thinzar's Portfolio</a>
+
+                <!-- How the header navbar will look like on screen sizes more than 767px -->
+                <nav class="navbar-nav navigation-bar">
+                    <a href="index.html" class="nav-item nav-link header-nav-box" aria-current="page">Home</a>
+                    <a href="aboutme.html" class="nav-item nav-link header-nav-box">About Me</a>
+                    <a href="lifeatsp.html" class="nav-item nav-link header-nav-box">Life at SP</a>
+                    <a href="careeroptions.html" class="nav-item nav-link header-nav-box">Career Options</a>
+                    <a href="feedback.html" class="nav-item nav-link header-nav-box">Feedback</a>
+                </nav>
+
+                <!-- How the header navbar will look like on screen sizes less than 767px -->
+                <nav class="inline-block icon-navbar">
+                    <a href="index.html" class="nav-item nav-link d-inline-block pe-1" aria-current="page"><img
+                            src="img/house.svg" alt=""></a>
+                    <a href="aboutme.html" class="nav-item nav-link  d-inline-block pe-1"><img src="img/person.svg"
+                            alt=""></a>
+                    <a href="lifeatsp.html" class="nav-item nav-link d-inline-block pe-1"><img src="img/book.svg"
+                            alt=""></a>
+                    <a href="careeroptions.html" class="nav-item nav-link  d-inline-block pe-1"><img
+                            src="img/briefcase.svg" alt=""></a>
+                    <a href="feedback.html" class="nav-item nav-link  d-inline-block pe-1"><img src="img/ui-checks.svg"
+                            alt=""></a>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm  h-25 ">
+                <div class="container">
+                    <a href="feedback.html" class="navbar-brand h4 text-decoration-none">Feedback</a>
+                    <!-- A digital clock to show the user the current time -->
+                    <div>
+                        <h5>Current Time</h5>
+                        <div id="dateNow" class="text-center"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- The main form -->
+        <form class="container my-4" id="body" name="myForm">
+            <fieldset>
+                <legend class="text-center h5">Feedback Form</legend>
+
+                <!-- A disclaimer to the user -->
+                <div>
+                    <p class="text-center lead fs-6">This data collection is for feedback purposes only, and will be
+                        kept strictly confidential.
+                    </p>
+                </div>
+
+                <!-- A required name input field with validation -->
+                <div class="form-floating mb-3">
+                    <input type="text" required class="form-control" id="name" placeholder="First Name + Last Name"
+                        name="name" onsubmit="return validateForm()" pattern="[A-Za-z ]{1,32}">
+                    <label for="name" class="form-label">Name:</label>
+                </div>
+
+                <!-- A required email input field with validation -->
+                <div class="form-floating mb-3">
+                    <input type="email" required class="form-control" id="email" placeholder="name@example.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <label for="email" class="form-label">Email:</label>
+                </div>
+
+                <!-- A selection list for age group -->
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="age">Age:</label>
+                    <select class="form-select" id="age">
+                        <option value="text" selected>Select your age range:</option>
+                        <option value="lessThan18">&#60;18</option>
+                        <option value="18to25">18-25</option>
+                        <option value="25to40">25-40</option>
+                        <option value="40to50">25-40</option>
+                        <option value="moreThan50">&#62;50</option>
+                    </select>
+                </div>
+
+                <!-- A selection list for gender -->
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected class="gender-option">Choose your gender:</option>
+                        <option value="male" class="gender-option">Male</option>
+                        <option value="female" class="gender-option">Female</option>
+                        <option value="others" class="gender-option">Others</option>
+                        <option value="none" class="gender-option">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <!-- A selection list for favourite programming language -->
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Favourite Programming Language">
+                        <option selected class="age-option">Favourite Programming Language:</option>
+                        <option value="py" class="age-option">Python</option>
+                        <option value="cpp" class="age-option">C++</option>
+                        <option value="c" class="age-option">C</option>
+                        <option value="cs" class="age-option">C#</option>
+                        <option value="php" class="age-option">PHP</option>
+                        <option value="java" class="age-option">Java</option>
+                        <option value="others" class="age-option">Others</option>
+                    </select>
+                </div>
+
+                <!-- A range bar for the user to rate the site -->
+                <div class="mb-3 ">
+                    <label for="rangeInput" class="form-label d-flex justify-content-center">Rate this
+                        site:</label>
+                    <div class="d-flex justify-content-between bd-highlight">
+                        <p class="me-4">0</p>
+                        <input type="range" class="form-range" id="rangeInput" max="10" min="0" step="1" value="5">
+                        <p class="ms-4">10</p>
+                    </div>
+                </div>
+
+                <!-- A feedback box -->
+                <div class="mb-5">
+                    <label for="feedback" class="form-label d-flex justify-content-center">Feedback:</label>
+                    <textarea class="form-control" id="feedback" rows="3"
+                        placeholder="Any feedback would be appreciated!"></textarea>
+                </div>
+
+                <!-- A switch to ask the user if they want to receive notifications -->
+                <div class="form-check mb-3 form-switch  d-flex justify-content-center">
+                    <input type="checkbox" required class="form-check-input" id="switchInput">
+                    <label for="switchInput" class="form-check-label ms-2">Would you like to receive future
+                        notifications
+                        from
+                        us?</label>
+                </div>
+
+                <!-- A submit button -->
+                <div class="mb-5 d-flex justify-content-center">
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="b-example-divider mt-4"></div>
+
+    <footer class="container  mt-4">
+        <nav class="navbar navbar-expand-sm footer-nav">
+            <div class="container  xs-center-fix">
+                <a href="#" class="navbar-brand h6  xs-center-fix xs-align-fix">&copy; 2022 Thinzar Hnin Yu</a>
+
+                <!-- How the footer navbar will look like on screen sizes more than 767px -->
+                <div class="navbar-nav navigation-bar">
+                    <a href="mailto:thinzarhninyu.17@gmail.com" class="nav-item nav-link footer-nav-box">
+                        <img src="img/envelope.svg" class="footer-logo" alt="Email">
+                    </a>
+                    <a href="http://www.instagram.com/micxehye" class="nav-item nav-link footer-nav-box">
+                        <img src="img/instagram.svg" class="footer-logo" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/thinzar.michelle.7" class="nav-item nav-link footer-nav-box">
+                        <img src="img/facebook.svg" class="footer-logo" alt="Facebook">
+                    </a>
+                    <a href="https://wa.me/+6594572945" class="nav-item nav-link footer-nav-box">
+                        <img src="img/whatsapp.svg" class="footer-logo" alt="Whatsapp">
+                    </a>
+                    <a href="https://www.twitter.com/micxehye" class="nav-item nav-link footer-nav-box">
+                        <img src="img/twitter.svg" class="footer-logo" alt="Twitter">
+                    </a>
+                    <a href="https://line.me/R/ti/p/micxehye" class="nav-item nav-link footer-nav-box">
+                        <img src="img/line.svg" class="footer-logo" alt="Line">
+                    </a>
+                </div>
+
+                <!-- How the footer navbar will look like on screen sizes more than 767px -->
+                <div class="navbar-nav  xs-center-fix icon-navbar">
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Click here to view my contact details!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">My Contact Details</h5>
+                                    <button class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="mailto:thinzarhninyu.17@gmail.com">
+                                        <img src="img/envelope.svg" class="footer-logo" alt="Email">
+                                    </a>
+                                    <a href="http://www.instagram.com/micxehye">
+                                        <img src="img/instagram.svg" class="footer-logo" alt="Instagram">
+                                    </a>
+                                    <a href="https://www.facebook.com/thinzar.michelle.7">
+                                        <img src="img/facebook.svg" class="footer-logo" alt="Facebook">
+                                    </a>
+                                    <a href="https://wa.me/+6594572945">
+                                        <img src="img/whatsapp.svg" class="footer-logo" alt="Whatsapp">
+                                    </a>
+                                    <a href="https://www.twitter.com/micxehye">
+                                        <img src="img/twitter.svg" class="footer-logo" alt="Twitter">
+                                    </a>
+                                    <a href="https://line.me/R/ti/p/micxehye">
+                                        <img src="img/line.svg" class="footer-logo" alt="Line">
+                                    </a>
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- <button    class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                    <button class="btn btn-primary close" data-dismiss="modal" aria-label="Close">Got
+                                        it!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

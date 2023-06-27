@@ -1,0 +1,60 @@
+/* Media Queries for Width of Body */
+
+@media only screen and (min-width: 767px) {
+   #body{
+      width: 80%;
+  }
+}
+
+@media (max-width: 575px) {
+   #body{
+      width: 100%;
+   }
+}
+
+/* Form Input Styles */
+
+input:invalid {
+   border: 1.5px solid red;
+}
+
+
+/* Font Styles */
+
+p.lead{
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+h1 {
+   color: white;
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   width: 400px;
+   text-align: center;
+}
+
+/* Clock Styles */
+
+div#clock {
+    border: 5px solid yellow;
+    border-radius: 20px;
+    width: 400px;
+ }
+ div#date, div#time {
+    font-size: 1.8em;
+    color:hsl(64,84%,73%);
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 1px 1px 1px red, 3px 3px 10px white;
+    text-align: center;
+    margin: 15px auto;
+ }
+ 
+ div#wday {
+    font-size: 2.5em;
+    color:hsl(64,84%,73%);
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 3px 3px 3px red, 3px 3px 10px white;
+    text-align: center;
+    margin: 15px auto;
+    letter-spacing: 0.25em;
+ }
